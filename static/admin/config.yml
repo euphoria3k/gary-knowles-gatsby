@@ -65,7 +65,7 @@ collections:
     label: "Pages"
     files:
       - file: "src/pages/index.md"
-        label: "Landing Page"
+        label: "Home Page"
         name: "index"
         fields:
           - {
@@ -75,9 +75,9 @@ collections:
               default: "index-page",
             }
           - { label: Title, name: title, widget: string }
-          - { label: Image, name: image, widget: image }
-          - { label: Heading, name: heading, widget: string }
           - { label: Subheading, name: subheading, widget: string }
+          - { label: "Contact Box", name: contactBox, widget: html }
+          - { label: Image, name: image, widget: image }
           - {
               label: Mainpitch,
               name: mainpitch,
@@ -88,63 +88,54 @@ collections:
                   { label: Description, name: description, widget: text },
                 ],
             }
-          - { label: Description, name: description, widget: string }
+          - { label: "SEO Description", name: description, widget: string }
           - {
-              label: Intro,
-              name: intro,
+              label: Services,
+              name: services,
               widget: object,
               fields:
                 [
                   { label: Heading, name: heading, widget: string },
                   { label: Description, name: description, widget: text },
                   {
-                    label: Blurbs,
-                    name: blurbs,
+                    label: "Services List",
+                    name: servicesList,
                     widget: list,
                     fields:
                       [
                         { label: Image, name: image, widget: image },
-                        { label: Text, name: text, widget: text },
+                        { label: Title, name: title, widget: text },
+                        { label: Description, name: description, widget: text },
                       ],
                   },
                 ],
             }
           - {
-              label: Main,
-              name: main,
+              label: "Latest Work",
+              name: latestWork,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Description, name: description, widget: text },
+                ],
+            }
+          - {
+              label: Testimonials,
+              name: testimonials,
               widget: object,
               fields:
                 [
                   { label: Heading, name: heading, widget: string },
                   { label: Description, name: description, widget: text },
                   {
-                    label: Image1,
-                    name: image1,
-                    widget: object,
+                    label: "Testimonials List",
+                    name: testimonialsList,
+                    widget: list,
                     fields:
                       [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
-                  },
-                  {
-                    label: Image2,
-                    name: image2,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
-                  },
-                  {
-                    label: Image3,
-                    name: image3,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
+                        { label: Name, name: title, widget: string },
+                        { label: Description, name: description, widget: text },
                       ],
                   },
                 ],
