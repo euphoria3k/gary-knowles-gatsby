@@ -1,10 +1,8 @@
 ---
 templateKey: index-page
 title: Gary Knowles Kitchen Fitters
-subheading: 'Design, Supply and Installation'
-contactBox: '**Give** us a call today for a free quotation on'
+subheading: "Design, Supply and Installation"
 image: /img/home-jumbotron.jpg
-subheading: Design, Supply and Installation
 contactBox: "Give us a call today for a free quotation on **01255 761403** or **07816 897939**"
 mainpitch:
   title: Welcome and thank you for visiting us!
