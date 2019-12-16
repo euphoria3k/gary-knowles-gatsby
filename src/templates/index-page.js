@@ -138,7 +138,9 @@ IndexPageTemplate.propTypes = {
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
-  AOS.init({ duration: 800, easing: "slide", once: true });
+  React.useEffect(() => {
+    AOS.init({ duration: 800, easing: "slide", once: true });
+  }, []);
 
   return (
     <Layout>
