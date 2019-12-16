@@ -2,7 +2,7 @@
 templateKey: index-page
 title: Gary Knowles Kitchen Fitters
 subheading: "Design, Supply and Installation"
-image: /img/home-jumbotron.jpg
+image: /img/hero_bg_1.jpg
 contactBox: "Give us a call today for a free quotation on<br> **01255 761403** or **07816 897939**"
 mainpitch:
   title: Welcome and thank you for visiting us!
@@ -21,7 +21,7 @@ services:
   servicesList:
     - title: |
         Full installation service
-      image: /img/coffee.png
+      image: /img/design.jpg
       description: |
         The complete install package including electrics, plastering & tiling.
 latestWork:

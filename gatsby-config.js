@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby + Netlify CMS Starter",
-    description:
-      "This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution."
+    title: `Gary Knowles Kitchen Fitters`,
+    description: `We are a local based company serving the Tendring District & surrounding areas, focusing on 100% customer satisfaction within all of its fitting services no matter how large or small the installation may be.`,
+    author: `James Spurgeon`,
   },
   plugins: [
     "gatsby-plugin-react-helmet",
