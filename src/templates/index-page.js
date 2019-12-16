@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby";
 
 import Layout from "../components/Layout";
 import WorkRoll from "../components/WorkRoll";
+import Hero from "../components/Hero";
 
 export const IndexPageTemplate = ({
   image,
@@ -16,20 +17,13 @@ export const IndexPageTemplate = ({
   testimonials
 }) => (
   <div>
-    <div
-      className="full-width-image margin-top-0"
-      style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-        backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`
-      }}
-    >
-      <h1>{title}</h1>
-      <h2>{subheading}</h2>
-      <h4>{contactBox}</h4>
-    </div>
+    <Hero
+      fullHeight={true}
+      title={title}
+      subheading={subheading}
+      contactBox={contactBox}
+      image={image}
+    ></Hero>
     <div id="mainpitch">
       <h1 className="title">{mainpitch.title}</h1>
       <h3 className="subtitle">{mainpitch.description}</h3>

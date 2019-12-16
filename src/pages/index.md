@@ -3,14 +3,11 @@ templateKey: index-page
 title: Gary Knowles Kitchen Fitters
 image: /img/home-jumbotron.jpg
 subheading: Design, Supply and Installation
-contactBox: Give us a call today for a free quotation on
+contactBox: <div>Give us a call today for a free quotation on</div>
 mainpitch:
-  title: Why Kaldi
+  title: Welcome and thank you for visiting us!
   description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    We are a local based company serving the Tendring District & surrounding areas, focusing on 100% customer satisfaction within all of its fitting services no matter how large or small the installation may be.<br/><br/>Please take a look below at the services we offer and some our completed work!
 description: >-
   Gary Knowles Kitchen Fitters
 services:

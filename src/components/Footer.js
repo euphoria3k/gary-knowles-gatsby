@@ -1,115 +1,83 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import { Link } from "gatsby";
+import React from "react";
 
-import logo from '../img/logo.svg'
-import facebook from '../img/social/facebook.svg'
-import instagram from '../img/social/instagram.svg'
-import twitter from '../img/social/twitter.svg'
-import vimeo from '../img/social/vimeo.svg'
-
-const Footer = class extends React.Component {
-  render() {
-    return (
-      <footer className="footer has-background-black has-text-white-ter">
-        <div className="content has-text-centered">
-          <img
-            src={logo}
-            alt="Kaldi"
-            style={{ width: '14em', height: '10em' }}
-          />
+const Footer = () => (
+  <footer className="site-footer bg-dark">
+    <div className="container">
+      <div className="row">
+        <div className="col-lg-4">
+          <div className="mb-5">
+            <h3 className="footer-heading mb-4">About us</h3>
+            <p>
+              Gary Knowles Kitchen Fitters is a local based company serving the
+              Tendring District &amp; surrounding areas, focusing on 100%
+              customer satisfaction within all of its fitting services no matter
+              how large or small the installation may be.
+            </p>
+          </div>
         </div>
-        <div className="content has-text-centered has-background-black has-text-white-ter">
-          <div className="container has-background-black has-text-white-ter">
-            <div className="columns">
-              <div className="column is-4">
-                <section className="menu">
-                  <ul className="menu-list">
-                    <li>
-                      <Link to="/" className="navbar-item">
-                        Home
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/about">
-                        About
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/products">
-                        Products
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/contact/examples">
-                        Form Examples
-                      </Link>
-                    </li>
-                    <li>
-                      <a
-                        className="navbar-item"
-                        href="/admin/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Admin
-                      </a>
-                    </li>
-                  </ul>
-                </section>
-              </div>
-              <div className="column is-4">
-                <section>
-                  <ul className="menu-list">
-                    <li>
-                      <Link className="navbar-item" to="/blog">
-                        Latest Stories
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/contact">
-                        Contact
-                      </Link>
-                    </li>
-                  </ul>
-                </section>
-              </div>
-              <div className="column is-4 social">
-                <a title="facebook" href="https://facebook.com">
-                  <img
-                    src={facebook}
-                    alt="Facebook"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="twitter" href="https://twitter.com">
-                  <img
-                    className="fas fa-lg"
-                    src={twitter}
-                    alt="Twitter"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="instagram" href="https://instagram.com">
-                  <img
-                    src={instagram}
-                    alt="Instagram"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="vimeo" href="https://vimeo.com">
-                  <img
-                    src={vimeo}
-                    alt="Vimeo"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-              </div>
+        <div className="col-lg-4 mb-5 mb-lg-0">
+          <div className="row mb-5">
+            <div className="col-md-12">
+              <h3 className="footer-heading mb-4">Navigations</h3>
+            </div>
+            <div className="col-md-6 col-lg-6">
+              <ul className="list-unstyled">
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+                <li>
+                  <a href="#">Latest Work</a>
+                </li>
+                <li>
+                  <a href="#">Contact Us</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </footer>
-    )
-  }
-}
+        <div className="col-lg-4 mb-5 mb-lg-0">
+          <h3 className="footer-heading mb-4">Follow Us</h3>
+          <div>
+            <iframe
+              src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpg%2Fgaryknowleskitchens&width=155&layout=button_count&action=like&size=large&share=true&height=46&appId"
+              width="155"
+              height="46"
+              style={{ border: "none", overflow: "hidden" }}
+              scrolling="no"
+              frameborder="0"
+              allowTransparency="true"
+              allow="encrypted-media"
+            ></iframe>
+          </div>
+          <div>
+            <a
+              href="https://www.facebook.com/pg/garyknowleskitchens"
+              target="_blank"
+              className="btn btn-dark"
+            >
+              <i className="fab fa-facebook-f" aria-hidden="true"></i> Find us
+              on Facebook
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="row pt-5 mt-5 text-center">
+        <div className="col-md-12">
+          <p>
+            Copyright &copy;
+            <script type="1c092284f34991ae7ec08e88-text/javascript">
+              document.write(new Date().getFullYear());
+            </script>
+            Gary Knowles. All rights reserved
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+);
 
-export default Footer
+export default Footer;
