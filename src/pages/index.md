@@ -9,9 +9,7 @@ contactBox: "Give us a call today for a free quotation on **01255 761403** or **
 mainpitch:
   title: Welcome and thank you for visiting us!
   description: >
-    We are a local based company serving the Tendring District & surrounding areas, focusing on 100% customer satisfaction within all of its fitting services no matter how large or small the installation may be.
-
-    Please take a look below at the services we offer and some our completed work!
+    We are a local based company serving the Tendring District & surrounding areas, focusing on 100% customer satisfaction within all of its fitting services no matter how large or small the installation may be. Please take a look below at the services we offer and some our completed work!
 description: >-
   Gary Knowles Kitchen Fitters
 services:
