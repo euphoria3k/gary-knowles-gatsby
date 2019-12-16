@@ -52,7 +52,7 @@ export const IndexPageTemplate = ({
               services.servicesList.map((service, idx) => (
                 <div
                   key={idx + `-serivce`}
-                  className="col-md-6 col-lg-3 mb-4 mb-lg-0 aos-init aos-animate"
+                  className="col-md-6 col-lg-3 mb-4 mb-lg-0"
                   data-aos="fade-up"
                   data-aos-delay={(idx + 1) * 100}
                 >
