@@ -9,46 +9,32 @@ class WorkRoll extends React.Component {
     const { edges: workItems } = data.allMarkdownRemark;
 
     return (
-      <div className="columns is-multiline">
+      <div>
         {workItems &&
           workItems.map(({ node: post }) => (
-            <div className="is-parent column is-6" key={post.id}>
-              <article
-                className={`blog-list-item tile is-child box notification`}
-              >
-                <header>
-                  {post.frontmatter.featuredimage ? (
-                    <div className="featured-thumbnail">
-                      <PreviewCompatibleImage
-                        imageInfo={{
-                          image: post.frontmatter.featuredimage,
-                          alt: `featured image thumbnail for post ${post.frontmatter.title}`
-                        }}
-                      />
-                    </div>
-                  ) : null}
-                  <p className="post-meta">
-                    <Link
-                      className="title has-text-primary is-size-4"
-                      to={post.fields.slug}
-                    >
-                      {post.frontmatter.title}
-                    </Link>
-                    <span> &bull; </span>
-                    <span className="subtitle is-size-5 is-block">
-                      {post.frontmatter.date}
-                    </span>
-                  </p>
-                </header>
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>
-                </p>
-              </article>
+            <div
+              key={post.id}
+              className="col-md-6 col-lg-4 mb-4"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <Link className="unit-9" to={post.fields.slug}>
+                <div
+                  className="image"
+                  style={{
+                    backgroundImage: `url(${
+                      !!post.frontmatter.featuredimage.childImageSharp
+                        ? post.frontmatter.featuredimage.childImageSharp.fluid
+                            .src
+                        : post.frontmatter.featuredimage
+                    })`
+                  }}
+                ></div>
+                <div className="unit-9-content">
+                  <h2>{post.frontmatter.title}</h2>
+                  <span>See more</span>
+                </div>
+              </Link>
             </div>
           ))}
       </div>
@@ -85,7 +71,7 @@ export default () => (
                 date(formatString: "MMMM DD, YYYY")
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 120, quality: 100) {
+                    fluid(maxWidth: 500, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }

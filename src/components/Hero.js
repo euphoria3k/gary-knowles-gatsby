@@ -1,6 +1,14 @@
 import { useStaticQuery, graphql } from "gatsby";
 import React, { Fragment } from "react";
 import { HTMLContent } from "./Content";
+import remark from "remark";
+import remarkHTML from "remark-html";
+
+const toHTML = value =>
+  remark()
+    .use(remarkHTML)
+    .processSync(value)
+    .toString();
 
 const Hero = ({ fullHeight, image, title, subheading, contactBox }) => {
   return (
@@ -36,7 +44,10 @@ const Hero = ({ fullHeight, image, title, subheading, contactBox }) => {
               <p className="mb-5">{subheading}</p>
 
               {contactBox && (
-                <HTMLContent className="p-4 bg-dark" content={contactBox} />
+                <HTMLContent
+                  className="p-4 bg-dark contact-box"
+                  content={toHTML(contactBox)}
+                />
               )}
             </div>
           </div>
