@@ -4,7 +4,6 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
 import WorkRoll from "../components/WorkRoll";
 import Hero from "../components/Hero";
-import "aos/dist/aos.css";
 import AOS from "aos";
 
 export const IndexPageTemplate = ({
