@@ -1,5 +1,6 @@
 import { useStaticQuery, graphql } from "gatsby";
 import React, { Fragment } from "react";
+import { HTMLContent } from "./Content";
 
 const Hero = ({ fullHeight, image, title, subheading, contactBox }) => {
   return (
@@ -34,7 +35,9 @@ const Hero = ({ fullHeight, image, title, subheading, contactBox }) => {
               </h1>
               <p className="mb-5">{subheading}</p>
 
-              <p className="p-4 bg-dark">{contactBox}</p>
+              {contactBox && (
+                <HTMLContent className="p-4 bg-dark" content={contactBox} />
+              )}
             </div>
           </div>
         </div>
