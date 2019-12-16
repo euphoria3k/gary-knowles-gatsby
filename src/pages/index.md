@@ -1,6 +1,8 @@
 ---
 templateKey: index-page
 title: Gary Knowles Kitchen Fitters
+subheading: 'Design, Supply and Installation'
+contactBox: '**Give** us a call today for a free quotation on'
 image: /img/home-jumbotron.jpg
 subheading: Design, Supply and Installation
 contactBox: "Give us a call today for a free quotation on **01255 761403** or **07816 897939**"
@@ -13,26 +15,31 @@ mainpitch:
 description: >-
   Gary Knowles Kitchen Fitters
 services:
-  servicesList:
-    - image: /img/coffee.png
-      title: >
-        Full installation service
-      description: >
-        The complete install package including electrics, plastering & tiling.
+  description: >
+    I offer a unique service where as I can offer the complete installation
+    package including the kitchen itself, the electrics, the tiling, the Gas
+    Safe work, even the plastering and you receive just the one bill at the end
+    of the install. No paper trail of different invoices & bills etc just the
+    one to cover all.
   heading: Our Services
-  description: >
-    I offer a unique service where as I can offer the complete installation package including the kitchen itself, the electrics, the tiling, the Gas Safe work, even the plastering and you receive just the one bill at the end of the install. No paper trail of different invoices & bills etc just the one to cover all.
-testimonials:
-  testimonialsList:
-    - title: >
+  servicesList:
+    - title: |
         Full installation service
-      description: >
+      image: /img/coffee.png
+      description: |
         The complete install package including electrics, plastering & tiling.
-  heading: What Our Customers Say
-  description: >
-    Please take a moment to read our reviews from all our happy customers. We pride ourselves with a 5 star rating at yell.com
 latestWork:
   title: Latest works
-  description: >
+  description: |
     Take a look at some of our latest completed kitchens.
+testimonials:
+  description: >
+    Please take a moment to read our reviews from all our happy customers. We
+    pride ourselves with a 5 star rating at yell.com
+  heading: What Our Customers Say
+  testimonialsList:
+    - title: |
+        Full installation service
+      description: |
+        The complete install package including electrics, plastering & tiling.
 ---
