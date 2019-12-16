@@ -122,7 +122,7 @@ export const pageQuery = graphql`
           description
         }
         services {
-          title
+          heading
           description
           servicesList {
             image {
@@ -132,22 +132,15 @@ export const pageQuery = graphql`
                 }
               }
             }
-            heading
+            title
             description
           }
         }
         testimonials {
-          title
+          heading
           description
           testimonialsList {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            heading
+            title
             description
           }
         }
