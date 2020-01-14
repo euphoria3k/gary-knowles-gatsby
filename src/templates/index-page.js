@@ -7,20 +7,6 @@ import Hero from "../components/Hero";
 import AOS from "aos";
 import TinySlider from "tiny-slider-react";
 
-const sliderSettings = {
-  lazyload: true,
-  nav: false,
-  mouseDrag: true,
-  loop: true,
-  items: 1,
-  gutter: 5,
-  responsive: {
-    420: {
-      items: 3
-    }
-  }
-};
-
 export const IndexPageTemplate = ({
   image,
   title,
@@ -119,7 +105,19 @@ export const IndexPageTemplate = ({
             {testimonials.testimonialsList &&
               testimonials.testimonialsList.map((testimonial, idx) => (
                 <TinySlider
-                  settings={sliderSettings}
+                  settings={{
+                    lazyload: true,
+                    nav: false,
+                    mouseDrag: true,
+                    loop: true,
+                    items: 1,
+                    gutter: 5,
+                    responsive: {
+                      420: {
+                        items: 3
+                      }
+                    }
+                  }}
                   key={idx + `-testimonial`}
                 >
                   <div className="text-center p-3 p-md-5 bg-white">
