@@ -102,7 +102,8 @@ export const IndexPageTemplate = ({
         </div>
         <div className="nonloop-block-13">
           <>
-            {testimonials.testimonialsList &&
+            {typeof window !== "undefined" &&
+              testimonials.testimonialsList &&
               testimonials.testimonialsList.map((testimonial, idx) => (
                 <TinySlider
                   settings={{
