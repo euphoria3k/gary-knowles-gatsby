@@ -20,7 +20,7 @@ const Header = ({ showLogo }) => {
                     </h3>
                     <h4
                       style={{ fontSize: "0.6rem" }}
-                      className="text-white roboto"
+                      className="text-white roboto d-none"
                     >
                       DESIGN, SUPPLY AND INSTALLATION
                     </h4>

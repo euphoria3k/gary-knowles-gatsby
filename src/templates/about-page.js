@@ -26,13 +26,21 @@ export const AboutPageTemplate = ({
         image={headerImage}
       ></Hero>
 
-      <div className="container" data-aos="fade-up">
-        <div className="featured-message d-flex">
-          <div className="row mt-5">
-            <div className="col-md-12 col-lg-7 mb-5">
+      <div className="site-section">
+        <div className="container">
+          <div className="row">
+            <div
+              className="site-section-heading text-center mb-5 w-border col-md-6 mx-auto"
+              data-aos="fade-up"
+            >
+              <h2 className="mb-5">A bit more information about us</h2>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-lg-7">
               <PageContent className="content" content={content} />
             </div>
-            <div className="col-md-12 col-lg-5 mb-5">
+            <div className="col-lg-5">
               <Img fluid={contentImage.childImageSharp.fluid} />
             </div>
           </div>

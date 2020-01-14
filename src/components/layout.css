@@ -850,7 +850,7 @@ a:hover {
 
 .site-blocks-cover.inner-page-cover,
 .site-blocks-cover.inner-page-cover .row {
-  min-height: 600px;
+  min-height: 420px;
   height: calc(30vh);
 }
 
