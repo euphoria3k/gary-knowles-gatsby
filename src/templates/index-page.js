@@ -5,6 +5,21 @@ import Layout from "../components/Layout";
 import WorkRoll from "../components/WorkRoll";
 import Hero from "../components/Hero";
 import AOS from "aos";
+import TinySlider from "tiny-slider-react";
+
+const sliderSettings = {
+  lazyload: true,
+  nav: false,
+  mouseDrag: true,
+  loop: true,
+  items: 1,
+  gutter: 5,
+  responsive: {
+    420: {
+      items: 3
+    }
+  }
+};
 
 export const IndexPageTemplate = ({
   image,
@@ -25,13 +40,13 @@ export const IndexPageTemplate = ({
       image={image}
     ></Hero>
     <div className="container">
-      <div className="featured-property-half d-flex">
+      <div className="featured-message d-flex">
         <div className="text text-center">
           <h2>{mainpitch.title}</h2>
           <p className="mb-5">{mainpitch.description}</p>
-          <a href="#" className="btn btn-dark px-5 py-3 mb-3">
+          <Link to="/about" className="btn btn-dark px-5 py-3 mb-3">
             Find out more about us
-          </a>
+          </Link>
         </div>
       </div>
     </div>
@@ -62,11 +77,11 @@ export const IndexPageTemplate = ({
                         ? service.image.childImageSharp.fluid.src
                         : service.image
                     }`}
-                    alt="Image"
-                    class="img-fluid"
+                    alt={service.title}
+                    className="img-fluid"
                   />
-                  <div class="p-4 bg-white">
-                    <h2 class="h5 text-black mb-3">{service.title}</h2>
+                  <div className="p-4 bg-white">
+                    <h2 className="h5 text-black mb-3">{service.title}</h2>
                     <p>{service.description}</p>
                   </div>
                 </div>
@@ -84,6 +99,11 @@ export const IndexPageTemplate = ({
           </div>
         </div>
         <WorkRoll></WorkRoll>
+        <div className="col-md-12 text-center mt-5" data-aos="fade-up">
+          <Link to="/work" className="btn btn-dark px-5 py-3">
+            See more of our work
+          </Link>
+        </div>
       </div>
     </div>
     <div className="site-section block-13">
@@ -94,27 +114,32 @@ export const IndexPageTemplate = ({
             <p>{testimonials.description}</p>
           </div>
         </div>
-        <div className="nonloop-block-13 owl-carousel">
+        <div className="nonloop-block-13">
           <>
             {testimonials.testimonialsList &&
               testimonials.testimonialsList.map((testimonial, idx) => (
-                <div
+                <TinySlider
+                  settings={sliderSettings}
                   key={idx + `-testimonial`}
-                  class="text-center p-3 p-md-5 bg-white"
                 >
-                  <div>
-                    <a
-                      class="text-black"
-                      href="https://www.yell.com/biz/gary-knowles-kitchen-fitters-frinton-on-sea-6370085/?sharedReview=00fb60d2-81c3-42af-82d1-43dd05c0301d&fbclid=IwAR2mQBHuQK9hc9nmihj1fXbBOtSryqpLRvuul7LsNeRPAvzCTnWFZ9hOyXE#view=popup5728"
-                      target="_blank"
-                    >
-                      <h3 class="font-weight-light h5">{testimonial.title}</h3>
-                      <p class="font-italic">
-                        &ldquo;{testimonial.description}&rdquo;
-                      </p>
-                    </a>
+                  <div className="text-center p-3 p-md-5 bg-white">
+                    <div>
+                      <a
+                        className="text-black"
+                        href="https://www.yell.com/biz/gary-knowles-kitchen-fitters-frinton-on-sea-6370085/?sharedReview=00fb60d2-81c3-42af-82d1-43dd05c0301d&fbclid=IwAR2mQBHuQK9hc9nmihj1fXbBOtSryqpLRvuul7LsNeRPAvzCTnWFZ9hOyXE#view=popup5728"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <h3 className="font-weight-light h5">
+                          {testimonial.title}
+                        </h3>
+                        <p className="font-italic">
+                          &ldquo;{testimonial.description}&rdquo;
+                        </p>
+                      </a>
+                    </div>
                   </div>
-                </div>
+                </TinySlider>
               ))}
           </>
         </div>
@@ -142,7 +167,7 @@ const IndexPage = ({ data }) => {
   }, []);
 
   return (
-    <Layout>
+    <Layout hideLogo={true}>
       <IndexPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}

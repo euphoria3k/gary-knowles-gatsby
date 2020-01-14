@@ -4,31 +4,61 @@ import Helmet from "react-helmet";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import Hero from "../components/Hero";
+import WorkRoll from "../components/WorkRoll";
+import Gallery from "../components/Gallery";
 
 export const WorkItemTemplate = ({
   content,
   contentComponent,
   description,
   title,
-  helmet
+  helmet,
+  featuredimage,
+  images
 }) => {
   const PostContent = contentComponent || Content;
 
   return (
-    <section className="section">
-      {helmet || ""}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
-            <p>{description}</p>
-            <PostContent content={content} />
+    <div>
+      <Hero fullHeight={false} title={title} image={featuredimage}></Hero>
+      <div className="container">
+        <div className="featured-message d-flex">
+          <div className="text text-center">
+            <h2>{title}</h2>
+            <p className="mb-5">{description}</p>
+            <Gallery
+              images={images.map(img => {
+                return {
+                  src: img.name.childImageSharp.large.src,
+                  thumbnail: img.name.childImageSharp.small.src,
+                  caption: "df"
+                };
+              })}
+            />
           </div>
         </div>
       </div>
-    </section>
+      <div className="site-section bg-light">
+        <div className="container">
+          <div className="row">
+            <div className="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
+              <h2 className="mb-5">Latest work</h2>
+              <p>Take a look at some of our latest completed kitchens.</p>
+            </div>
+          </div>
+          <WorkRoll></WorkRoll>
+          <div
+            className="col-md-12 text-center mt-5 aos-init aos-animate"
+            data-aos="fade-up"
+          >
+            <Link to="/work" className="btn btn-dark px-5 py-3">
+              See more of our work
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
@@ -59,6 +89,8 @@ const WorkItem = ({ data }) => {
           </Helmet>
         }
         title={post.frontmatter.title}
+        featuredimage={post.frontmatter.featuredimage}
+        images={post.frontmatter.images}
       />
     </Layout>
   );
@@ -81,6 +113,25 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
+        featuredimage {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        images {
+          name {
+            childImageSharp {
+              large: fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+              small: fluid(maxWidth: 500, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
       }
     }
   }

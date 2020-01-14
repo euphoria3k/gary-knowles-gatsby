@@ -24,16 +24,16 @@ const Footer = () => (
             <div className="col-md-6 col-lg-6">
               <ul className="list-unstyled">
                 <li>
-                  <a href="#">Home</a>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <a href="#">About Us</a>
+                  <Link to="/about">About Us</Link>
                 </li>
                 <li>
-                  <a href="#">Latest Work</a>
+                  <Link to="/work">Latest Work</Link>
                 </li>
                 <li>
-                  <a href="#">Contact Us</a>
+                  <Link to="/contact">Contact Us</Link>
                 </li>
               </ul>
             </div>
@@ -48,8 +48,9 @@ const Footer = () => (
               height="46"
               style={{ border: "none", overflow: "hidden" }}
               scrolling="no"
-              frameborder="0"
-              allowTransparency="true"
+              frameBorder="0"
+              allowtransparency="true"
+              title="Follow us on Facebook"
               allow="encrypted-media"
             ></iframe>
           </div>
@@ -57,6 +58,7 @@ const Footer = () => (
             <a
               href="https://www.facebook.com/pg/garyknowleskitchens"
               target="_blank"
+              rel="noopener noreferrer"
               className="btn btn-dark"
             >
               <i className="fab fa-facebook-f" aria-hidden="true"></i> Find us

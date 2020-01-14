@@ -4,51 +4,46 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import Hero from "../components/Hero";
-import Img from "gatsby-image";
 import AOS from "aos";
+import WorkRoll from "../components/WorkRoll";
 
-export const AboutPageTemplate = ({
+export const WorkPageTemplate = ({
   title,
   subheading,
-  content,
-  contentComponent,
   headerImage,
-  contentImage
+  content,
+  contentComponent
 }) => {
   const PageContent = contentComponent || Content;
 
   return (
     <div>
-      <Hero
-        fullHeight={false}
-        title={title}
-        subheading={subheading}
-        image={headerImage}
-      ></Hero>
+      <Hero fullHeight={false} title={title} image={headerImage}></Hero>
 
-      <div className="container" data-aos="fade-up">
-        <div className="featured-message d-flex">
-          <div className="row mt-5">
-            <div className="col-md-12 col-lg-7 mb-5">
-              <PageContent className="content" content={content} />
-            </div>
-            <div className="col-md-12 col-lg-5 mb-5">
-              <Img fluid={contentImage.childImageSharp.fluid} />
+      <div className="site-section bg-light">
+        <div className="container">
+          <div className="row">
+            <div
+              className="site-section-heading text-center mb-5 w-border col-md-6 mx-auto"
+              data-aos="fade-up"
+            >
+              <h2 className="mb-5">{subheading}</h2>
             </div>
           </div>
+          <WorkRoll></WorkRoll>
         </div>
       </div>
     </div>
   );
 };
 
-AboutPageTemplate.propTypes = {
+WorkPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func
 };
 
-const AboutPage = ({ data }) => {
+const WorkPage = ({ data }) => {
   const { markdownRemark: post } = data;
 
   React.useEffect(() => {
@@ -57,26 +52,25 @@ const AboutPage = ({ data }) => {
 
   return (
     <Layout>
-      <AboutPageTemplate
+      <WorkPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         subheading={post.frontmatter.subheading}
-        content={post.html}
         headerImage={post.frontmatter.image}
-        contentImage={post.frontmatter.contentImage}
+        content={post.html}
       />
     </Layout>
   );
 };
 
-AboutPage.propTypes = {
+WorkPage.propTypes = {
   data: PropTypes.object.isRequired
 };
 
-export default AboutPage;
+export default WorkPage;
 
-export const aboutPageQuery = graphql`
-  query AboutPage($id: String!) {
+export const workPageQuery = graphql`
+  query WorkPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
@@ -85,13 +79,6 @@ export const aboutPageQuery = graphql`
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        contentImage {
-          childImageSharp {
-            fluid(maxWidth: 1024, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }

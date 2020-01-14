@@ -2,11 +2,12 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import Footer from "../components/Footer";
 import "./layout.css";
+import "@fortawesome/fontawesome-free/css/all.css";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
 import Header from "./Header";
 
-const TemplateWrapper = ({ children }) => {
+const TemplateWrapper = ({ children, hideLogo }) => {
   const { title, description } = useSiteMetadata();
   return (
     <div>
@@ -48,7 +49,7 @@ const TemplateWrapper = ({ children }) => {
           content={`${withPrefix("/")}img/og-image.jpg`}
         />
       </Helmet>
-      <Header></Header>
+      <Header showLogo={!hideLogo}></Header>
       <div>{children}</div>
       <Footer />
     </div>

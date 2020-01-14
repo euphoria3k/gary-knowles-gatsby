@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Gary Knowles Kitchen Fitters`,
     description: `We are a local based company serving the Tendring District & surrounding areas, focusing on 100% customer satisfaction within all of its fitting services no matter how large or small the installation may be.`,
-    author: `James Spurgeon`,
+    author: `James Spurgeon`
   },
   plugins: [
     "gatsby-plugin-react-helmet",
@@ -64,7 +64,8 @@ module.exports = {
       options: {
         fonts: [
           `Quicksand\:400,500,600,700`,
-          `Nunito+Sans\:200,300,400,700,900` // you can also specify font weights and styles
+          `Nunito+Sans\:200,300,400,700,900`,
+          `Roboto\:200,300,400,700,900`
         ],
         display: "swap"
       }

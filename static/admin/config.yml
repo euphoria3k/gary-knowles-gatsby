@@ -151,4 +151,21 @@ collections:
               default: "about-page",
             }
           - { label: "Title", name: "title", widget: "string" }
+          - { label: Subheading, name: subheading, widget: string }
+          - { label: Image, name: image, widget: image }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: ContentImage, name: contentImage, widget: image }
+      - file: "src/pages/work/index.md"
+        label: "Work"
+        name: "work"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "work-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: Subheading, name: subheading, widget: string }
+          - { label: Image, name: image, widget: image }
           - { label: "Body", name: "body", widget: "markdown" }

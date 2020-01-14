@@ -14,7 +14,9 @@ const Hero = ({ fullHeight, image, title, subheading, contactBox }) => {
   return (
     <>
       <div
-        className="site-blocks-cover overlay"
+        className={`site-blocks-cover overlay ${
+          !fullHeight ? "inner-page-cover" : ""
+        }`}
         style={{
           height: `calc(${fullHeight ? 100 : 30}vh)`,
           backgroundImage: `url(${
@@ -33,7 +35,7 @@ const Hero = ({ fullHeight, image, title, subheading, contactBox }) => {
               data-aos="fade-up"
               data-aos-delay="400"
             >
-              <h1 className="mb-4">
+              <h1 className="mb-4 roboto">
                 {title.split("\n").map((item, key) => (
                   <Fragment key={key}>
                     {item}
@@ -41,8 +43,7 @@ const Hero = ({ fullHeight, image, title, subheading, contactBox }) => {
                   </Fragment>
                 ))}
               </h1>
-              <p className="mb-5">{subheading}</p>
-
+              {subheading && <h2 className="mb-5 roboto">{subheading}</h2>}
               {contactBox && (
                 <HTMLContent
                   className="p-4 bg-dark contact-box"
