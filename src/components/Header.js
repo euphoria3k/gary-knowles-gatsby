@@ -78,7 +78,7 @@ const Header = ({ showLogo }) => {
           <div className="site-mobile-menu-body">
             {showMobileMenu && (
               <ul className="site-nav-wrap">
-                <li className="active">
+                <li>
                   <Link to="/">Home</Link>
                 </li>
                 <li>

@@ -17,7 +17,7 @@ export const WorkItemTemplate = ({
   featuredimage,
   images
 }) => {
-  const PostContent = contentComponent || Content;
+  const PageContent = contentComponent || Content;
 
   return (
     <div>
@@ -25,8 +25,10 @@ export const WorkItemTemplate = ({
       <div className="container">
         <div className="featured-message d-flex">
           <div className="text text-center">
-            <h2>{title}</h2>
-            <p className="mb-5">{description}</p>
+            <h2>{description}</h2>
+            <p className="mb-5">
+              <PageContent className="content" content={content} />
+            </p>
             <Gallery
               images={images.map(img => {
                 return {

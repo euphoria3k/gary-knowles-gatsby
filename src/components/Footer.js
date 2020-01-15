@@ -19,7 +19,7 @@ const Footer = () => (
         <div className="col-lg-4 mb-5 mb-lg-0">
           <div className="row mb-5">
             <div className="col-md-12">
-              <h3 className="footer-heading mb-4">Navigations</h3>
+              <h3 className="footer-heading mb-4">Navigation</h3>
             </div>
             <div className="col-md-6 col-lg-6">
               <ul className="list-unstyled">
