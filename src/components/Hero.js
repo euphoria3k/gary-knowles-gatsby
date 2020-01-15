@@ -21,9 +21,7 @@ const Hero = ({ fullHeight, image, title, subheading, contactBox }) => {
           height: `calc(${fullHeight ? 100 : 30}vh)`,
           backgroundImage: `url(${
             !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-          })`,
-          backgroundPosition: `top left`,
-          backgroundAttachment: `fixed`
+          })`
         }}
         data-aos="fade"
         data-stellar-background-ratio="0.5"
