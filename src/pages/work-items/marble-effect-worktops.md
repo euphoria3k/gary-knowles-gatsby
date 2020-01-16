@@ -6,6 +6,7 @@ description: Lovely kitchen
 featuredimage: /img/job1.jpg
 images:
   - name: /img/job1.jpg
-  - name: /img/job2.jpg
+    description: ""
 ---
+
 Happy customers

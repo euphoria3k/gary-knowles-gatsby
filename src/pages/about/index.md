@@ -2,7 +2,7 @@
 templateKey: "about-page"
 path: /about
 title: About us
-subheading: ""
+subheading: "A bit more information about us"
 image: /img/hero_bg_2.jpg
 contentImage: /img/van.jpg
 ---

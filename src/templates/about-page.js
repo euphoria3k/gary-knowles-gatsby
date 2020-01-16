@@ -19,12 +19,7 @@ export const AboutPageTemplate = ({
 
   return (
     <div>
-      <Hero
-        fullHeight={false}
-        title={title}
-        subheading={subheading}
-        image={headerImage}
-      ></Hero>
+      <Hero fullHeight={false} title={title} image={headerImage}></Hero>
 
       <div className="site-section">
         <div className="container">
@@ -33,7 +28,7 @@ export const AboutPageTemplate = ({
               className="site-section-heading text-center mb-5 w-border col-md-6 mx-auto"
               data-aos="fade-up"
             >
-              <h2 className="mb-5">A bit more information about us</h2>
+              <h2 className="mb-5">{subheading}</h2>
             </div>
           </div>
           <div className="row">

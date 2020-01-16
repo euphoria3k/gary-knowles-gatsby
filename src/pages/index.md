@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Gary Knowles Kitchen Fitters
-subheading: 'Design, Supply and Installation'
+subheading: "Design, Supply and Installation"
 contactBox: >-
   Give us a call today for a free quotation on<br> **01255 761403** or **07816
   897939**
@@ -22,7 +22,7 @@ services:
     of the install. No paper trail of different invoices & bills etc just the
     one to cover all.
   heading: Our Services
-  servicesList:
+  service:
     - title: |
         Full installation service
       image: /img/design.jpg
@@ -48,10 +48,9 @@ testimonials:
     Please take a moment to read our reviews from all our happy customers. We
     pride ourselves with a 5 star rating at yell.com
   heading: What Our Customers Say
-  testimonialsList:
+  testimonial:
     - title: |
         Full installation service
       description: |
         The complete install package including electrics, plastering & tiling.
 ---
-

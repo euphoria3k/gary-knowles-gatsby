@@ -39,6 +39,7 @@ collections:
               name: "description",
               widget: "string",
               required: false,
+              default: "",
             }
 
   - name: "pages"
@@ -78,8 +79,8 @@ collections:
                   { label: Heading, name: heading, widget: string },
                   { label: Description, name: description, widget: text },
                   {
-                    label: "Services List",
-                    name: servicesList,
+                    label: "Service",
+                    name: service,
                     widget: list,
                     fields:
                       [
@@ -109,8 +110,8 @@ collections:
                   { label: Heading, name: heading, widget: string },
                   { label: Description, name: description, widget: text },
                   {
-                    label: "Testimonials List",
-                    name: testimonialsList,
+                    label: "Testimonial",
+                    name: testimonial,
                     widget: list,
                     fields:
                       [

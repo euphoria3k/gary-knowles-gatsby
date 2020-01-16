@@ -49,8 +49,8 @@ export const IndexPageTemplate = ({
         </div>
         <div className="row">
           <>
-            {services.servicesList &&
-              services.servicesList.map((service, idx) => (
+            {services.service &&
+              services.service.map((service, idx) => (
                 <div
                   key={idx + `-serivce`}
                   className="col-md-6 col-lg-3 mb-4 mb-lg-0"
@@ -103,8 +103,8 @@ export const IndexPageTemplate = ({
         <div className="nonloop-block-13">
           <>
             {typeof window !== "undefined" &&
-              testimonials.testimonialsList &&
-              testimonials.testimonialsList.map((testimonial, idx) => (
+              testimonials.testimonial &&
+              testimonials.testimonial.map((testimonial, idx) => (
                 <TinySlider
                   settings={{
                     lazyload: true,
@@ -212,7 +212,7 @@ export const pageQuery = graphql`
         services {
           heading
           description
-          servicesList {
+          service {
             image {
               childImageSharp {
                 fluid(maxWidth: 600, quality: 64) {
@@ -227,7 +227,7 @@ export const pageQuery = graphql`
         testimonials {
           heading
           description
-          testimonialsList {
+          testimonial {
             title
             description
           }

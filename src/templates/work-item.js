@@ -34,7 +34,7 @@ export const WorkItemTemplate = ({
                 return {
                   src: img.name.childImageSharp.large.src,
                   thumbnail: img.name.childImageSharp.small.src,
-                  caption: "df"
+                  caption: img.description
                 };
               })}
             />
@@ -133,6 +133,7 @@ export const pageQuery = graphql`
               }
             }
           }
+          description
         }
       }
     }
