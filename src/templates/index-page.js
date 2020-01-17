@@ -102,30 +102,31 @@ export const IndexPageTemplate = ({
         </div>
         <div className="nonloop-block-13">
           <>
-            {typeof window !== "undefined" &&
-              testimonials.testimonial &&
-              testimonials.testimonial.map((testimonial, idx) => (
-                <TinySlider
-                  settings={{
-                    lazyload: true,
-                    nav: false,
-                    mouseDrag: true,
-                    loop: true,
-                    items: 1,
-                    gutter: 5,
-                    responsive: {
-                      420: {
-                        items: 3
-                      }
+            {typeof window !== "undefined" && testimonials.testimonial && (
+              <TinySlider
+                settings={{
+                  lazyload: true,
+                  nav: false,
+                  mouseDrag: true,
+                  loop: true,
+                  items: 1,
+                  gutter: 5,
+                  responsive: {
+                    420: {
+                      items: 3
                     }
-                  }}
-                  key={idx + `-testimonial`}
-                >
-                  <div className="text-center p-3 p-md-5 bg-white">
+                  }
+                }}
+              >
+                {testimonials.testimonial.map((testimonial, idx) => (
+                  <div
+                    className="text-center p-3 p-md-5 bg-white"
+                    key={idx + `-testimonial`}
+                  >
                     <div>
                       <a
                         className="text-black"
-                        href="https://www.yell.com/biz/gary-knowles-kitchen-fitters-frinton-on-sea-6370085/?sharedReview=00fb60d2-81c3-42af-82d1-43dd05c0301d&fbclid=IwAR2mQBHuQK9hc9nmihj1fXbBOtSryqpLRvuul7LsNeRPAvzCTnWFZ9hOyXE#view=popup5728"
+                        href="https://www.yell.com/biz/gary-knowles-kitchen-fitters-frinton-on-sea-6370085/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -138,8 +139,9 @@ export const IndexPageTemplate = ({
                       </a>
                     </div>
                   </div>
-                </TinySlider>
-              ))}
+                ))}
+              </TinySlider>
+            )}
           </>
         </div>
       </div>
