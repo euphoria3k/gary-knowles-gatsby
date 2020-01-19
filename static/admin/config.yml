@@ -17,7 +17,6 @@ collections:
     folder: "src/pages/work-items"
     create: true
     slug: "{{slug}}"
-    media_folder: ""
     fields:
       - {
           label: "Template Key",

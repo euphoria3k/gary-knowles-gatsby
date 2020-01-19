@@ -9,7 +9,7 @@ class WorkRoll extends React.Component {
     const { edges: workItems } = data.allMarkdownRemark;
 
     return (
-      <div>
+      <div className="row">
         {workItems &&
           workItems.map(({ node: post }) => (
             <div
