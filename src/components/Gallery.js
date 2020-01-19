@@ -57,15 +57,15 @@ class Gallery extends Component {
 
     const gallery = images.map((obj, i) => {
       return (
-        <div className="card" key={i}>
+        <div className="col-sm-6 col-md-4 col-lg-3 mb-3" key={i}>
           <a href={obj.src} onClick={e => this.openLightbox(i, e)}>
-            <img src={obj.thumbnail} className="w-100" />
+            <img src={obj.thumbnail} className="w-100 rounded" />
           </a>
         </div>
       );
     });
 
-    return <div className="card-columns">{gallery}</div>;
+    return <div className="row">{gallery}</div>;
   }
   render() {
     return (

@@ -864,7 +864,7 @@ a:hover {
 .site-blocks-cover h1 {
   font-weight: 900;
   color: #fff;
-  font-size: 3rem;
+  font-size: 2.3rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -878,9 +878,15 @@ a:hover {
 .site-blocks-cover h2 {
   font-weight: 700;
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+@media (min-width: 576px) {
+  .site-blocks-cover h2 {
+    font-size: 2rem;
+  }
 }
 
 .site-blocks-cover p {
@@ -2652,7 +2658,7 @@ figure figcaption {
   }
 }
 
-.featured-message div {
+.featured-message > div {
   width: 80%;
   margin: 0 auto;
 }

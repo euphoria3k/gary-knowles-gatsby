@@ -7,6 +7,7 @@ import Content, { HTMLContent } from "../components/Content";
 import Hero from "../components/Hero";
 import WorkRoll from "../components/WorkRoll";
 import Gallery from "../components/Gallery";
+import AOS from "aos";
 
 export const WorkItemTemplate = ({
   content,
@@ -21,14 +22,14 @@ export const WorkItemTemplate = ({
 
   return (
     <div>
-      <Hero fullHeight={false} title={title} image={featuredimage}></Hero>
+      <Hero fullHeight={true} title={title} image={featuredimage}></Hero>
       <div className="container">
         <div className="featured-message d-flex">
           <div className="text text-center">
             <h2>{description}</h2>
-            <p className="mb-5">
+            <div className="mb-5">
               <PageContent className="content" content={content} />
-            </p>
+            </div>
             <Gallery
               images={images.map(img => {
                 return {
@@ -74,6 +75,10 @@ WorkItemTemplate.propTypes = {
 
 const WorkItem = ({ data }) => {
   const { markdownRemark: post } = data;
+
+  React.useEffect(() => {
+    AOS.init({ duration: 800, easing: "slide", once: true });
+  }, []);
 
   return (
     <Layout>
