@@ -3,15 +3,15 @@ import PropTypes from "prop-types";
 import { Link, graphql, StaticQuery } from "gatsby";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
 
-class WorkRoll extends React.Component {
+class WorkRollTemplate extends React.Component {
   render() {
-    const { data } = this.props;
+    const { data, limit } = this.props;
     const { edges: workItems } = data.allMarkdownRemark;
 
     return (
       <div className="row">
         {workItems &&
-          workItems.map(({ node: post }) => (
+          workItems.slice(0, limit || 999).map(({ node: post }) => (
             <div
               key={post.id}
               className="col-md-6 col-lg-4 mb-4"
@@ -42,7 +42,7 @@ class WorkRoll extends React.Component {
   }
 }
 
-WorkRoll.propTypes = {
+WorkRollTemplate.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array
@@ -50,7 +50,7 @@ WorkRoll.propTypes = {
   })
 };
 
-export default () => (
+const WorkRoll = ({ limit }) => (
   <StaticQuery
     query={graphql`
       query WorkRollQuery {
@@ -82,6 +82,10 @@ export default () => (
         }
       }
     `}
-    render={(data, count) => <WorkRoll data={data} count={count} />}
+    render={(data, count) => (
+      <WorkRollTemplate data={data} count={count} limit={limit} />
+    )}
   />
 );
+
+export default WorkRoll;

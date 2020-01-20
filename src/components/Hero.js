@@ -19,9 +19,14 @@ const Hero = ({ fullHeight, image, title, subheading, contactBox }) => {
         }`}
         style={{
           height: `calc(${fullHeight ? 100 : 30}vh)`,
-          backgroundImage: `url(${
-            !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-          })`
+          backgroundImage: image
+            ? `url(${
+                !!image.childImageSharp
+                  ? image.childImageSharp.fluid.src
+                  : image
+              })`
+            : "none",
+          backgroundColor: image ? "#fff" : "#666"
         }}
         data-aos="fade"
         data-stellar-background-ratio="0.5"

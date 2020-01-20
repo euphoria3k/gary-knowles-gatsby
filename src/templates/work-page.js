@@ -30,7 +30,7 @@ export const WorkPageTemplate = ({
               <h2 className="mb-5">{subheading}</h2>
             </div>
           </div>
-          <WorkRoll></WorkRoll>
+          <WorkRoll limit={36}></WorkRoll>
         </div>
       </div>
     </div>

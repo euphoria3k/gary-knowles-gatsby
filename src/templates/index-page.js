@@ -87,7 +87,7 @@ export const IndexPageTemplate = ({
               <p>{latestWork.description}</p>
             </div>
           </div>
-          <WorkRoll></WorkRoll>
+          <WorkRoll limit={6}></WorkRoll>
           <div className="col-md-12 text-center mt-5" data-aos="fade-up">
             <Link to="/work" className="btn btn-dark px-5 py-3">
               See more of our work
