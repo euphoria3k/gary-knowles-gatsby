@@ -5,6 +5,9 @@ subheading: 'Design, Supply and Installation'
 contactBox: >-
   Give us a call today for a free quotation on<br> **01255 761403** or **07816
   897939**
+
+
+  **Or email us at info@gknowleskitchenfitter.co.uk**
 image: /img/hero_bg_1.jpg
 mainpitch:
   title: Welcome and thank you for visiting us!
