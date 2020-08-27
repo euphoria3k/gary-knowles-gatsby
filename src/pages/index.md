@@ -8,6 +8,10 @@ contactBox: >-
 
 
   **Or email us at info@gknowleskitchenfitter.co.uk**
+
+
+  **Take part in our Autumn 2020 promotional sale event, see further details
+  below.**
 image: /img/hero_bg_1.jpg
 mainpitch:
   title: Welcome and thank you for visiting us!
@@ -42,6 +46,19 @@ services:
     - title: Worktop Replacement
       image: /img/worktops.jpg
       description: Replace your worktops sink & tap
+    - title: AUTUMN 2020 PROMOTIONAL SALE EVENT & PRIZE DRAW
+      image: /img/delonghi-coffee-machine.jpg
+      description: >
+        Starting from the 1st September 2020 we are holding our promotional sale
+        event ending on the 31st October 2020.
+
+        Just simply have your new dream kitchen designed, planned, priced and
+        place a deposit for your new kitchen by the 31st October 2020,
+        regardless of the fitting date to be entered into our draw for the
+        chance to win a fabulous Delonghi bean to cup coffee machine and Krups
+        chilled beer dispenser.
+
+        The winner shall be announced on the 1st December 2020.
 latestWork:
   title: Latest works
   description: |
