@@ -11,7 +11,7 @@ contactBox: >-
 
 
   ****
-image: /img/gary_knowles.jpg
+image: /img/job3.jpg
 mainpitch:
   title: Welcome and thank you for visiting us!
   description: >
