@@ -10,8 +10,7 @@ contactBox: >-
   **Or email us at info@gknowleskitchenfitter.co.uk**
 
 
-  **Take part in our Autumn 2020 promotional sale event, see further details
-  below.**
+  ****
 image: /img/hero_bg_1.jpg
 mainpitch:
   title: Welcome and thank you for visiting us!
