@@ -11,7 +11,7 @@ contactBox: >-
 
 
   ****
-image: /img/job3.jpg
+image: /img/f9b8e8e4-a4b9-47f0-ab29-841b9f421032.jpeg
 mainpitch:
   title: Welcome and thank you for visiting us!
   description: >
@@ -105,5 +105,15 @@ testimonials:
         Gary and the team are professional and efficient and we can't recommend
         Gary highly enough. Thank you Gary for everything, we are absolutely
         thrilled.
+    - title: Exceptional!
+      description: >
+        I recently had a new kitchen installed which also included plastering,
+        electrical work and decorating.
+
+        We received exceptional service with all work undertaken with an
+        excellent eye to detail.
+
+        We would recommend Gary to anybody who is considering undertaking the
+        thought of a new kitchen.
 ---
 
