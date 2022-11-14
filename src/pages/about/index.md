@@ -5,11 +5,11 @@ subheading: A bit more information about us
 image: /img/hero_bg_2.jpg
 contentImage: /img/gary_knowles.jpg
 ---
-I am a local tradesman serving the Tendring District & surrounding areas, including North Essex, South Suffolk & depending on availability, further afield.
+I am a local tradesman & business owner serving the Tendring District & surrounding areas.
 
 I offer full or part service covering all aspects of installation from removal of existing units & accessories to complete installation of new units, including Plastering, Ceramic Floor Tiling & Wall Tiling & Laminate flooring. I also offer fully qualified electrical work & Gas Safe work, all which comes with certification upon completion.
 
-I have a trade accounts with Howdens Joinery, who supply high quality kitchens to the trade only, thus enabling professionals such as ourselves to install beautiful kitchens with a first class result. 
+I have a trade accounts with Howdens Joinery & Magnet who supply high quality kitchens to the trade only, thus enabling professionals such as ourselves to install beautiful kitchens with a first class result. 
 
 I also have top end suppliers of replacement kitchen doors which are very competitively priced indeed.
 
