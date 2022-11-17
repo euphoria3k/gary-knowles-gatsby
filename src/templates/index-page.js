@@ -61,10 +61,10 @@ export const IndexPageTemplate = ({
                     data-aos-delay={(idx + 1) * 100}
                   >
                     <img
-                      src={`${
-                        !!service.image?.childImageSharp
+                      src={`${service.image ?
+                        !!service.image.childImageSharp
                           ? service.image.childImageSharp.fluid.src
-                          : service.image
+                          : service.image : ''
                       }`}
                       alt={service.title}
                       className="img-fluid"
