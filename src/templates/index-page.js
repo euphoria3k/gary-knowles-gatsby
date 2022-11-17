@@ -62,7 +62,7 @@ export const IndexPageTemplate = ({
                   >
                     <img
                       src={`${
-                        !!service.image.childImageSharp
+                        !!service.image?.childImageSharp
                           ? service.image.childImageSharp.fluid.src
                           : service.image
                       }`}
