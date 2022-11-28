@@ -2,7 +2,7 @@
 templateKey: about-page
 title: About us
 subheading: A bit more information about us
-image: /img/hero_bg_2.jpg
+image: /img/25fee8aa-b18e-4e9e-83fc-92b0c12650de.jpeg
 contentImage: /img/gary_knowles.jpg
 ---
 I am a local tradesman & business owner serving the Tendring District & surrounding areas.
@@ -21,4 +21,4 @@ Although there are several members of my team at times you still get one invoice
 
 I would welcome the opportunity to earn your trust and deliver you the best service in the industry.
 
-Please take some time to view some of my previous installations in my portfolio page
+Please take some time to view some of my previous installations in my previous work page
