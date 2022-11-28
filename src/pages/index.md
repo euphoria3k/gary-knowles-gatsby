@@ -47,6 +47,12 @@ services:
     - title: Worktop Replacement
       image: /img/54555863-9006-45a7-a0e5-30742a9296c5.jpeg
       description: Replace your worktops sink & tap
+    - title: Flooring
+      image: /img/165e2eca-8956-4e81-99a7-62f7f9149049_1_201_a.jpeg
+      description: |-
+        We also supply & fit several types of floor coverings too!
+        LVT Vinyl flooring
+        Ceramic tiling
 latestWork:
   title: Latest works
   description: |
