@@ -37,7 +37,7 @@ services:
       description: |
         The complete install package including electrics, plastering & tiling.
     - title: Ceramic Tiling
-      image: /img/tiling.jpg
+      image: /img/3384f6a0-8855-4599-923b-d323b451ff21.jpeg
       description: Wall and floor tiling
     - title: Project Management
       image: /img/projectmanagement.jpg
@@ -45,7 +45,7 @@ services:
         Over seeing the entire installation from start to finish arranging all
         required tradesmen as when needed
     - title: Worktop Replacement
-      image: /img/worktops.jpg
+      image: /img/54555863-9006-45a7-a0e5-30742a9296c5.jpeg
       description: Replace your worktops sink & tap
 latestWork:
   title: Latest works
