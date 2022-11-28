@@ -26,7 +26,9 @@ services:
     package including the kitchen itself, the electrics, the tiling, the Gas
     Safe work, even the plastering and you receive just the one bill at the end
     of the install. No paper trail of different invoices & bills etc just the
-    one to cover all.
+    one to cover all. I have been project managing kitchen refurbishment
+    installations now for over 10 years and have some of the best tradesmen in
+    the business at my service.
   heading: Our Services
   service:
     - title: |
@@ -102,5 +104,15 @@ testimonials:
 
         We would recommend Gary to anybody who is considering undertaking the
         thought of a new kitchen.
+    - title: Excellent team reliable and professional
+      description: >-
+        Excellent team who transformed the kitchen in our old village hall.
+
+        They took everything back to bare bricks and did a lot of tidying up old
+        pipework's and electrical cables. 
+
+        Highly recommend their work.
+
+        Sue
 ---
 
