@@ -137,6 +137,22 @@ testimonials:
         Id recommend them to anyone in the future and will 100% be using them
         for our next home. 5 stars.
 
-        Michael
+        Michael 
+    - title: Gary Knowles is brilliant kitchen fitter
+      description: >
+        Gary Knowles fitted my new kitchen recently and was brilliant in every
+        way.
+
+        He called me when he said he would. Always turned up as arranged and
+        used amazing contractors, all competent and skilled.
+
+        He paid attention to the smallest details and nothing was too much
+        trouble and he is a thoroughly nice person.
+
+        So I can recommend Gary 200%!
+
+        If you use Gary you wont be disappointed.
+
+        Rita D
 ---
 
