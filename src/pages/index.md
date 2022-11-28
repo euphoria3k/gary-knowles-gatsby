@@ -125,5 +125,18 @@ testimonials:
         Highly recommend their work.
 
         Sue
+    - title: 5 star kitchen fitters!
+      description: >-
+        I honestly couldn't fault them in anyway, very professional, friendly
+        and genuine guys.
+
+        The work they carried out is just beyond amazing and they kept us in the
+        loop the whole time tackling any problems that came up during the
+        process head on without flaws.
+
+        Id recommend them to anyone in the future and will 100% be using them
+        for our next home. 5 stars.
+
+        Michael
 ---
 
