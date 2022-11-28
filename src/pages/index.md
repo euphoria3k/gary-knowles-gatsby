@@ -53,6 +53,11 @@ services:
         We also supply & fit several types of floor coverings too!
         LVT Vinyl flooring
         Ceramic tiling
+    - title: Solid wood worktops
+      image: /img/dsc00205.jpg
+      description: >-
+        We can supply & fit a wide range of solid timber worktops to suit your
+        needs and wishes
 latestWork:
   title: Latest works
   description: |
