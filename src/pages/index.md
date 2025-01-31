@@ -3,14 +3,14 @@ templateKey: index-page
 title: Gary Knowles Kitchen Fitters
 subheading: 'Design, Supply and Installation'
 contactBox: >-
-  Give us a call today for a free quotation on<br> **01255 761403** or **07816
-  897939**
+  Give us a call today for a free no obligation consultation on<br> **01255
+  761403** or **07816 897939**
 
 
   **Or email us at info@gknowleskitchenfitter.co.uk**
 
 
-  ****
+  - - -
 image: /img/f9b8e8e4-a4b9-47f0-ab29-841b9f421032.jpeg
 mainpitch:
   title: Welcome and thank you for visiting us!
@@ -47,12 +47,6 @@ services:
     - title: Worktop Replacement
       image: /img/54555863-9006-45a7-a0e5-30742a9296c5.jpeg
       description: Replace your worktops sink & tap
-    - title: Flooring
-      image: /img/165e2eca-8956-4e81-99a7-62f7f9149049_1_201_a.jpeg
-      description: |-
-        We also supply & fit several types of floor coverings too!
-        LVT Vinyl flooring
-        Ceramic tiling
     - title: Solid wood worktops
       image: /img/dsc00205.jpg
       description: >-
