@@ -55,6 +55,9 @@ services:
       description: >-
         We can supply & fit a wide range of solid timber worktops to suit your
         needs and wishes
+    - title: The modern look
+      image: /img/dsc00331.jpg
+      description: Some beautiful finishes for that million dollar look!
 latestWork:
   title: Latest works
   description: |
