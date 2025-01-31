@@ -58,6 +58,9 @@ services:
     - title: The modern look
       image: /img/dsc00331.jpg
       description: Some beautiful finishes for that million dollar look!
+    - title: Traditional kitchens
+      image: /img/sfuo3422.jpg
+      description: Beautiful shaker style paint to order kitchens installed.
 latestWork:
   title: Latest works
   description: |
