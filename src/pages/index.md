@@ -27,8 +27,11 @@ services:
     Safe work, even the plastering and you receive just the one bill at the end
     of the install. No paper trail of different invoices & bills etc just the
     one to cover all. I have been project managing kitchen refurbishment
-    installations now for over 10 years and have some of the best tradesmen in
+    installations now for over 15 years and have some of the best tradesmen in
     the business at my service.
+
+    Each and every installation is treated with the upmost respect and care that
+    it deserves, that you deserve.
   heading: Our Services
   service:
     - title: |
