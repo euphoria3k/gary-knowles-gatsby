@@ -160,5 +160,20 @@ testimonials:
         damage before fitting and got replacement if it was. He listens to what
         you want and will offer suggestions if he has a different idea but will
         not push it. No job too big or too small.
+    - title: Michelle
+      description: >-
+        Absolutely amazing!!
+
+
+        Gary has completed fitting our kitchen.
+
+        If I could give him 10 stars I would! The kitchen is amazing and whilst
+        he was working nothing was too much trouble. It was also such a pleasure
+        when he left on the first day having ripped out the old kitchen to find
+        the empty space completely spotless, so clean and tidy.
+
+        When he left the units had been cleaned and were ready to fill. 
+
+        I cannot recommend Gary highly enough!
 ---
 
