@@ -59,7 +59,7 @@ latestWork:
 testimonials:
   description: >
     Please take a moment to read our reviews from all our happy customers. We
-    pride ourselves with a 5 star rating at yell.com
+    are rated outstanding by yell.com themselves!
   heading: What Our Customers Say
   testimonial:
     - title: New kitchen and cloakroom November 2019
