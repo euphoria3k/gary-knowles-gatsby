@@ -148,17 +148,14 @@ testimonials:
         If you use Gary you wont be disappointed.
 
         Rita D
-    - title: Mark
+    - title: Great Job!
       description: >-
         Gary arrived when he said he would, everything he fitted he checked for
         damage before fitting and got replacement if it was. He listens to what
         you want and will offer suggestions if he has a different idea but will
         not push it. No job too big or too small.
-    - title: Michelle
+    - title: 'Absolutely amazing! '
       description: >-
-        Absolutely amazing!!
-
-
         Gary has completed fitting our kitchen.
 
         If I could give him 10 stars I would! The kitchen is amazing and whilst
